@@ -1,0 +1,14 @@
+<h1 id="tovote">Enter correct details to vote</h1>
+<%- include('messages') %>
+<a id="dashbutt" href="/dashboard">DASHBOARD</a>
+<div id="voting">
+    <form action="/forvoting" method="POST">
+        <label for="username">Enter Username  of Who are conductiing:</label><br>
+        <input type="text" name="username" id="username"><br>
+        <label for="teamname">Enter Teamname:</label><br>
+        <input type="text" name="teamname" id="teamname"><br>
+        <label for="code">Enter code to vote:</label><br>
+        <input type="password" name="code" id="code"><br>
+        <button id="codevote">Enter</button>
+    </form>
+</div>

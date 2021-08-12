@@ -1,0 +1,11 @@
+<h1 class="noofvotes">Details Of Team and Monitoring the no of votes had done</h1>
+<a id="dashbutt" href="/dashboard">DASHBOARD</a>
+<a id="dashbutt" href="/createTeam">CreateTeam</a>
+<div class="names">
+    <p>TEAM NAMES</p>
+    <% createuserteam.forEach(create=>{ %>
+        <a class="createteamname" href="/<%= create._id %>">
+            <h2><%= create.teamname %></h2>
+        </a><br>
+    <% }) %>
+</div>

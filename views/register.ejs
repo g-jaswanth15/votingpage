@@ -1,0 +1,17 @@
+<div id="registerpage">
+    <h1 id="logh1">Register Here</h1>
+    <%- include('messages') %>
+    <form action="/register" method="POST">
+        <label class="text" for="username">USERNAME</label><br>
+        <input placeholder="Enter Username" id="username" name="username" type="text"><br>
+        <label class="tetx" for="email">EMAIL</label><br>
+        <input placeholder="Enter your email" type="email" name="email" id="email"><br>
+        <label class="tetx" for="password">PASSWORD</label><br>
+        <input placeholder="Enter password" type="password" name="password" id="password"><br>
+        <label class="text" for="confirm-password">Confirm PASSWORD</label><br>
+        <input placeholder="Confirm password" type="password" name="confirmpassword" id="confirm-password">
+        <button class="userbutt" >Register</button>
+    </form>
+    <p>If u have an account..</p>
+    <a href="/login">login here</a>
+</div>

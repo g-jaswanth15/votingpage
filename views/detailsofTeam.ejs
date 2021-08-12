@@ -1,0 +1,68 @@
+<h1 class="teamname"><%= create.teamname %></h1>
+<%- include('messages') %>
+<a id="dashbutt" href="/dashboard">DASHBOARD</a>
+<div class="teams">
+    <div class="design">
+        <h2>design1</h2>
+        <h3>About design1 :</h3>
+        <h4><%= create.design1 %></h4>
+        <h3>Color:</h3>
+        <h4><%= create.color1 %></h4>
+    </div>
+    <div class="design">
+        <h2>design2</h2>
+        <h3>About design1</h3>
+        <h4><%= create.design2 %></h4>
+        <h3>Color:</h3>
+        <h4><%= create.color2 %></h4>
+    </div>
+</div>
+<h3 class="code">The code of the team is : <%= create.code %></h3>
+
+
+<% var count = [] %>
+<% var count1 = [] %>
+<% if(vote.length>0) {%>
+    <% vote.forEach(r=>{ %>
+        <% if(r.design == 'design1'){ %>
+            <% count.push(r.participant) %>
+        <% } %> 
+    <% }) %>
+<% } %>
+
+<% if(vote.length>0) {%>
+    <% vote.forEach(r=>{ %>
+        <% if(r.design == 'design2'){ %>
+            <% count1.push(r.participant) %>
+        <% } %>
+    <% }) %>
+<% } %>
+<div class="count">
+    <h2  >No of votes for design1 - <p><%= count.length %></p> </h2>
+    <h2 >No of votes for design2 - <p><%= count1.length %></p></h2>
+</div>
+
+<h1 class="voting">Voting Members</h1>
+<div id="members">
+    <% if(vote.length>0) {%>
+        <table class="votemembers">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>choosen</th>
+                </tr>
+            </thead>
+            <form action="/end" method="POST">
+                <button id="END">END</button>
+            </form>
+            <tbody>
+                <% for(let i = vote.length-1;i>=0;i--){ %>
+                    <tr>
+                        <td><%= vote[i].participant %></td>
+                        <td><%= vote[i].design %></td>
+                    </tr>
+                <% } %>
+        </tbody>
+    </table>
+    <% } %>
+</div>

@@ -1,0 +1,22 @@
+<% createuserteam.forEach(create =>{ %>
+<h1 class="teamname1"><%= create.teamname %></h1>
+<h2>Details about the two designs</h2>
+<div class="teams">
+    <div class="design">
+        <h2>design1</h2>
+        <h3>About design1 :</h3>
+        <h4><%= create.design1 %></h4>
+        <h3>Color:</h3>
+        <h4><%= create.color1 %></h4>
+    </div>
+    <div class="design">
+        <h2>design2</h2>
+        <h3>About design1</h3>
+        <h4><%= create.design2 %></h4>
+        <h3>Color:</h3>
+        <h4><%= create.color2 %></h4>
+    </div>
+</div>
+<p>If You read the all the details click on done to vote</p>
+<a href="/forvoting">Done</a>
+}) %>

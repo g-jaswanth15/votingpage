@@ -1,0 +1,35 @@
+<h1 class="teamname" >Voting page</h1>
+<h1 class="teamname1"><%= create.teamname %></h1>
+<h2>Details about the two designs</h2>
+<div class="teams">
+    <div class="design">
+        <h2>design1</h2>
+        <h3>About design1 :</h3>
+        <h4><%= create.design1 %></h4>
+        <h3>Color:</h3>
+        <h4><%= create.color1 %></h4>
+    </div>
+    <div class="design">
+        <h2>design2</h2>
+        <h3>About design1</h3>
+        <h4><%= create.design2 %></h4>
+        <h3>Color:</h3>
+        <h4><%= create.color2 %></h4>
+    </div>
+</div>
+<h2 id="here">Vote Here</h2><br>
+<%- include('messages') %><br>
+<div id="uservote">
+    <form action="/done" method="POST">
+        <label  id="participant1" placeholder="enter your name" for="participant">Enter Your name</label>
+        <input type="text" name="participant" id="participant">
+        <div class="cast">
+            <p>select your option</p>
+            <input type="radio" name="design" value="design1" id="design">
+            <label class="design" for="design">design1</label><br>
+            <input type="radio" name="design" value="design2" id="design">
+            <label class="design" for="design">design2</label><br>
+        </div><br>
+            <button id="submit1">Submit</button>
+    </form>
+</div>

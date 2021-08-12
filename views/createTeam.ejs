@@ -1,0 +1,20 @@
+<h1 class="create">Enter the details to create Your team </h1><br>
+<%- include('messages') %>
+<a id="dashbutt" href="/dashboard">DASHBOARD</a>
+<form action="/createTeam" method="POST">
+    <div id="designs">
+        <label for="teamname">Enter Team Name</label><br>
+        <input placeholder="Team name" type="text" id="teamname" name="teamname"><br>
+        <label for="design1">Enter the details of design1</label><br>
+        <textarea placeholder="About the design" type="text" id="design1" name="design1"></textarea><br>
+        <label for="color1">Color of the design1</label><br>
+        <input placeholder="Enter color" type="text" id="color1" name="color1"><br>
+        <label for="design2">Enter the details of design1</label><br>
+        <textarea placeholder="About the design" type="text" id="design2" name="design2"></textarea><br>
+        <label for="color1">Color of the design1</label><br>
+        <input placeholder="Enter color" type="text" id="color2" name="color2"><br>
+        <label for="code">Code For Voting</label><br>
+        <input placeholder="Enter the code" type="text" id="code" name="code"><br>
+        <button id="CreateTeam">Create Team</button>
+    </div>
+</form>
