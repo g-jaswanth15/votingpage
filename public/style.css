@@ -1,0 +1,425 @@
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: blanchedalmond;
+}
+
+#welcome{
+    top: 50%;
+    left: 50%;
+    padding-top: 30px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+     position: absolute;
+    box-sizing: border-box;
+    font-size:20px;
+}
+a#login {
+    text-decoration-line: none;
+    font-size: 30px;
+    color: darksalmon;
+    font-weight: bold;
+}
+a#register {
+    text-decoration-line: none;
+    font-size: 30px;
+    color: darksalmon;
+    font-weight: bold;
+}
+#welcomep{
+    font-size: 20px;
+}
+#loginpage { 
+    width: 270px;
+    height: 470px;
+    background: rgb(24, 23, 23);
+    color: rgb(240, 11, 11);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+#registerpage {
+    width: 350px;
+    height: 630px;
+    background: rgb(24, 23, 23);
+    color: rgb(240, 11, 11);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+#logh1,#registh1{
+    text-align: center;
+    margin: 0;
+    padding: 0 0 20px;
+    font-size: 22px;
+}
+.text{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+}
+#loginpage input , #registerpage input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#loginpage input[type="email"],input[type="password"],#registerpage input[type="email"],input[type="password"],input[type="text"] 
+{
+    border:none;
+    border-bottom :1px solid rgb(247, 247, 247) ;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: whitesmoke;
+    font-size: 16px;
+}
+.userbutt{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    background: #fb2525;
+    color: whitesmoke;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.userbutt:hover{
+    background: rgb(226, 250, 10);
+    color: rgb(43, 43, 40);
+    cursor: pointer;
+}
+#loginpage p,#registerpage p{
+    font-size: 15px;
+}
+#loginpage a,#registerpage a{
+   text-decoration: none;
+   font-size: 18px;
+   line-height: 20px;
+   color: rgb(157, 204, 204); 
+}
+#loginpage a:hover,#registerpage a:hover{
+    color: indigo;
+}
+#messages{
+    text-align: center;
+    background-color: beige;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius :10px ;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    box-sizing: border-box;
+}
+#success_msg{
+    text-align: center;
+    background-color: beige;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius :10px ;
+    color: rgb(6, 107, 20);
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+#dashboard{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 70px;
+    color: rgb(51, 255, 0);
+}
+#welcome1{
+    font-size: 40px;
+    color: rgb(255, 123, 0);
+}
+#container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(240, 11, 11);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+#container a{
+    border-radius: 20px;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px 15px;
+    border: 2px solid whitesmoke;
+}
+#container a:hover{
+    background-color: yellow;
+    color: rgb(102, 4, 97);
+}
+#designs{
+    font-size: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: rgb(240, 160, 11);
+    padding: 20px 20px;
+}
+#designs input[type = 'text'],textarea{
+    border:none;
+    border-bottom :1px solid rgb(255, 255, 255) ;
+    background: transparent;
+    outline: none;
+    height: 25px;
+    color: whitesmoke;
+    font-size: 18px;
+}
+#designs ::placeholder{
+    color: whitesmoke;
+}
+.create{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(247, 247, 247);
+}
+#createTeam ,#codevote{
+    border: none;
+    outline: none;
+    background: #fb2525;
+    color: whitesmoke;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+#createTeam:hover , #codevote:hover{
+    background: rgb(226, 250, 10);
+    color: rgb(43, 43, 40);
+    cursor: pointer;
+}
+.noofvotes{
+    text-align: center;
+    color: rgb(247, 247, 247);
+}
+.names{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 40px;
+}
+.createteamname{
+    margin-left: 20px;
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 20px;
+    border: 2px solid rgb(250, 3, 3);
+    background-color: rgb(24, 23, 23);
+    border-radius: 25px;
+}
+.teamname{
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(156, 17, 17);
+}
+.teams{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.design h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: rgb(51, 255, 0);
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.design h3{
+    font-size: 25px;
+    color: rosybrown;
+    margin-left: 10px;
+}
+.design h4{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(240, 240, 240);
+    margin-left: 10px;
+}
+.code{
+    font: caption;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: chocolate;
+}
+.teamname1{
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(154, 156, 17);
+}
+#tovote{
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(255, 174, 0);
+    margin-bottom: 30px;
+}
+#voting label{
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 0px 10px 0px 10px;
+    color: rgb(138, 196, 3);
+}
+#voting input[type="text"],input[type="password"]{
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    /* margin-left: 20px; */
+    font-size: 18px;
+}
+.votemembers{ 
+    border-collapse: collapse;
+    margin:25px 0px ;
+    font-size: 1.1em;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(250, 252, 248, 0.15);
+}
+.votemembers thead th{
+    background-color: rgb(26, 212, 141);
+    color: rgb(17, 16, 17);
+    font-weight: bold;
+}
+.votemembers th , .votemembers td {
+    padding: 12px 15px;
+}
+.votemembers tbody tr {
+    text-align: center;
+    border-bottom: 2px rgb(229, 225, 231) solid;
+
+}
+.votemembers tbody tr:nth-of-type(even){
+    background-color: rgb(68, 67, 67);
+}
+.votemembers tbody tr:last-of-type{
+    border-bottom: 2px solid rgb(26, 212, 141);
+}
+.voting{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(226, 43, 165);
+}
+.count{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.count h2{
+   color: rgb(187, 255, 1);
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: bold;
+   font-size: 25px;
+}
+.count h2 p{
+    display: inline;
+    color: darkgrey;
+}
+#END{
+    color: whitesmoke;
+    float: right;
+    border:none;
+    margin-right: 30px;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 0px 10px 0px 10px;
+    background-color: rgb(247, 9, 9);
+    cursor: pointer;
+}
+#here{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 243, 71);
+}
+#uservote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#uservote input[type='text']{
+    font-size: 20px;
+    color: cornsilk;
+}
+#participant1{
+    font-size: 25px;
+    color: coral;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#participant1 ::placeholder{
+    color: cornsilk;
+}
+.cast p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: serif;
+}
+.design{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(29, 247, 0);
+    font-weight: bold;
+}
+#submit1{
+    border-radius: 20px;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px 15px;
+    border: 2px solid whitesmoke;
+}
+#sunmit1:hover{
+    background-color: yellow;
+    color: rgb(102, 4, 97);
+}
+
+#dashbutt{
+    border-radius: 20px;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px 15px;
+    border: 2px solid whitesmoke;
+    float: right;
+    margin-right: 20px;
+}
+#dashbutt:hover{
+    background-color: yellow;
+    color: rgb(102, 4, 97);
+}
+
