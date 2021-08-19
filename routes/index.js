@@ -5,8 +5,7 @@ const createuserteam = require('../models/create')
 const vote = require('../models/vote')
 const passport = require('passport')
 const {ensureAuthenticated} = require('../passportaut/auth')
-const { render } = require('ejs')
-const { findOne, create } = require('../models/vote')
+
 
 router.get('/',(req,res)=>{
     res.render('welcome',{title:'WELCOME'})
@@ -82,7 +81,7 @@ router.post('/login',(req,res,next)=>{
         successRedirect: '/dashboard',
         failureRedirect:'/login',
         failureFlash:true
-    })(req,res,next)
+    }),(req,res,next)
 })
 
 router.get('/logout',(req,res)=>{
